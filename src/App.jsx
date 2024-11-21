@@ -6,7 +6,7 @@ import "./styles.css"
 export default function App() {
   const [todos, setTodos] = useState(() => {
     const localValue = localStorage.getItem("ITEMS")
-    console.log(localValue)
+    //console.log(localValue)
     if (localValue == null) return []
     return JSON.parse(localValue)
 })
